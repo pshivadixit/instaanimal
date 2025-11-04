@@ -1,9 +1,9 @@
 {
-  "name": "insta-animal",
+  "name": "instaanimal",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pshivadixit.github.io/insta-animal/",
+  "homepage": "https://pshivadixit.github.io/instaanimal/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
