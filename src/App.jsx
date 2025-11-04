@@ -9,7 +9,10 @@ import CompanyInfoSection from "./components/CompanyInfoSection";
 
 export default function App() {
   const location = useLocation();
-  const isHome = location.pathname === "/";
+
+  // ✅ Fix: consider both '/' and '/instaanimal/' as home
+  const isHome =
+    location.pathname === "/" || location.pathname === "/instaanimal/" || location.pathname === "/instaanimal";
 
   return (
     <div className="app-root">
