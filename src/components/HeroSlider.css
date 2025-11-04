@@ -1,0 +1,94 @@
+.hero-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-image 0.8s ease-in-out;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.slide-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  max-width: 800px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.category {
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid transparent;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.category.active {
+  border-color: #708238;
+}
+
+.icon-box {
+  width: 120px;
+  height: 120px;
+  background-color: #f3f1ce;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.category-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.category p {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #4b5320;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    height: 300px;
+  }
+
+  .slide-title {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+
+  .icon-box {
+    width: 90px;
+    height: 90px;
+  }
+
+  .category-img {
+    width: 60px;
+    height: 60px;
+  }
+}
