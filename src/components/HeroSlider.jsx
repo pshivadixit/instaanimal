@@ -4,31 +4,31 @@ import "./HeroSlider.css";
 const slides = [
   {
     id: 1,
-    image: "/images/smallruminant.jpg",
+    image: "/instaanimal/images/smallruminant.jpg",
     title: "Nurturing Healthier Possibilities, Every Day",
     category: "Small Ruminant",
   },
   {
     id: 2,
-    image: "/images/ruminant.jpg",
+    image: "/instaanimal/images/ruminant.jpg",
     title: "Enhancing Dairy & Livestock Wellness",
     category: "Ruminant",
   },
   {
     id: 3,
-    image: "/images/pet.jpg",
+    image: "/instaanimal/images/pet.jpg",
     title: "Caring for Pets with Innovation",
     category: "Pet",
   },
   {
     id: 4,
-    image: "/images/poultry.jpg",
+    image: "/instaanimal/images/poultry.jpg",
     title: "Improving Poultry Productivity",
     category: "Poultry",
   },
   {
     id: 5,
-    image: "/images/aquatic.jpg",
+    image: "/instaanimal/images/aquatic.jpg",
     title: "Supporting Sustainable Aquaculture",
     category: "Aquatic",
   },

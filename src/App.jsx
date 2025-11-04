@@ -10,9 +10,11 @@ import CompanyInfoSection from "./components/CompanyInfoSection";
 export default function App() {
   const location = useLocation();
 
-  // ✅ Fix: consider both '/' and '/instaanimal/' as home
+  // ✅ Consider both root and GitHub Pages-style paths as home
   const isHome =
-    location.pathname === "/" || location.pathname === "/instaanimal/" || location.pathname === "/instaanimal";
+    location.pathname === "/" ||
+    location.pathname === "/instaanimal" ||
+    location.pathname === "/instaanimal/";
 
   return (
     <div className="app-root">
@@ -21,12 +23,17 @@ export default function App() {
       <main>
         {isHome && (
           <>
+            {/* Hero section with slider */}
             <HeroSlider />
+
+            {/* Key home sections */}
             <OverviewSection />
             <FeaturedProducts />
             <CompanyInfoSection />
           </>
         )}
+
+        {/* Routes for About, Products, Contact, etc. */}
         <AppRoutes />
       </main>
     </div>
